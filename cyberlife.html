@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="cyberlife.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>CyberLife </title>
+    <link rel="icon" href="images/connectdevelop.svg" type="image/icon type"> 
+ 
+  </head>
+  <!-- header and main menu with logo -->
+  <body>
+    <header>
+      <a href=" " class="logo">CyberLife</a>
+      <nav>
+        <a href="#services">Services</a>
+        <a href="#projects">CyberMarket </a>
+        <a href="#contact">Student Essentials</a>
+        <a href="#ourmission" >Our Mission </a>
+      </nav>
+    </header>
+
+    <!-- Main section -->
+    <section class="main">
+      <div>
+        <!-- <h2>hello Im Ahmed Sarhan <br /><span>Helping university student take a step further to achieve their dreams </span></h2>
+        <h3>I build attractive websites</h3>
+        <a href="#projects" class="btn"> view my work</a> -->
+
+<!-- login promt -->
+     <!-- Pills navs -->
+    
+<div class="login">
+
+<ul class="nav nav-pills nav-justified mb-3" id="ex1" role="tablist">
+    <li class="nav-item" role="presentation">
+      <a class="nav-link active" id="tab-login" data-mdb-toggle="pill" href="#pills-login" role="tab"
+        aria-controls="pills-login" aria-selected="true">Login</a>
+    </li>
+    <li class="nav-item" role="presentation">
+      <a class="nav-link" id="tab-register" data-mdb-toggle="pill" href="#pills-register" role="tab"
+        aria-controls="pills-register" aria-selected="false">Register</a>
+    </li>
+  </ul>
+  <!-- Pills navs -->
+  
+  <!-- Pills content -->
+  <div class="tab-content form " >
+    <div class="tab-pane fade show active" id="pills-login" role="tabpanel" aria-labelledby="tab-login">
+      <form>
+        <div class="text-center mb-3">
+          <p>Sign in with:</p>
+          <button type="button" class="btn btn-link btn-floating mx-1">
+            <i class="fab fa-facebook-f"></i>
+          </button>
+  
+          <button type="button" class="btn btn-link btn-floating mx-1">
+            <i class="fab fa-google"></i>
+          </button>
+  
+          <button type="button" class="btn btn-link btn-floating mx-1">
+            <i class="fab fa-twitter"></i>
+          </button>
+  
+          <button type="button" class="btn btn-link btn-floating mx-1">
+            <i class="fab fa-github"></i>
+          </button>
+        </div>
+  
+        <p class="text-center">or:</p>
+  
+        <!-- Email input -->
+        <div class="form-outline mb-4">
+          <input type="email" id="loginName" class="form-control" />
+          <label class="form-label" for="loginName">Email or username</label>
+        </div>
+  
+        <!-- Password input -->
+        <div class="form-outline mb-4">
+          <input type="password" id="loginPassword" class="form-control" />
+          <label class="form-label" for="loginPassword">Password</label>
+        </div>
+  
+        <!-- 2 column grid layout -->
+        <div class="row mb-4">
+          <div class="col-md-6 d-flex justify-content-center">
+            <!-- Checkbox -->
+            <div class="form-check mb-3 mb-md-0">
+              <input class="form-check-input" type="checkbox" value="" id="loginCheck" checked />
+              <label class="form-check-label" for="loginCheck"> Remember me </label>
+            </div>
+          </div>
+  
+          <div class="col-md-6 d-flex justify-content-center">
+            <!-- Simple link -->
+            <a href="#!">Forgot password?</a>
+          </div>
+        </div>
+  
+        <!-- Submit button -->
+        <button type="submit" class="btn btn-primary btn-block mb-4">Sign in</button>
+  
+        <!-- Register buttons -->
+        <div class="text-center">
+          <p>Not a member? <a href="#!">Register</a></p>
+        </div>
+      </form>
+    </div>
+    <div class="tab-pane fade" id="pills-register" role="tabpanel" aria-labelledby="tab-register">
+      <form>
+        <div class="text-center mb-3">
+          <p>Sign up with:</p>
+          <button type="button" class="btn btn-link btn-floating mx-1">
+            <i class="fab fa-facebook-f"></i>
+          </button>
+  
+          <button type="button" class="btn btn-link btn-floating mx-1">
+            <i class="fab fa-google"></i>
+          </button>
+  
+          <button type="button" class="btn btn-link btn-floating mx-1">
+            <i class="fab fa-twitter"></i>
+          </button>
+  
+          <button type="button" class="btn btn-link btn-floating mx-1">
+            <i class="fab fa-github"></i>
+          </button>
+        </div>
+  
+        <p class="text-center">or:</p>
+  
+        <!-- Name input -->
+        <div class="form-outline mb-4">
+          <input type="text" id="registerName" class="form-control" />
+          <label class="form-label" for="registerName">Name</label>
+        </div>
+  
+        <!-- Username input -->
+        <div class="form-outline mb-4">
+          <input type="text" id="registerUsername" class="form-control" />
+          <label class="form-label" for="registerUsername">Username</label>
+        </div>
+  
+        <!-- Email input -->
+        <div class="form-outline mb-4">
+          <input type="email" id="registerEmail" class="form-control" />
+          <label class="form-label" for="registerEmail">Email</label>
+        </div>
+  
+        <!-- Password input -->
+        <div class="form-outline mb-4">
+          <input type="password" id="registerPassword" class="form-control" />
+          <label class="form-label" for="registerPassword">Password</label>
+        </div>
+  
+        <!-- Repeat Password input -->
+        <div class="form-outline mb-4">
+          <input type="password" id="registerRepeatPassword" class="form-control" />
+          <label class="form-label" for="registerRepeatPassword">Repeat password</label>
+        </div>
+  
+        <!-- Checkbox -->
+        <div class="form-check d-flex justify-content-center mb-4">
+          <input class="form-check-input me-2" type="checkbox" value="" id="registerCheck" checked
+            aria-describedby="registerCheckHelpText" />
+          <label class="form-check-label" for="registerCheck">
+            I have read and agree to the terms
+          </label>
+        </div>
+  
+        <!-- Submit button -->
+        <button type="submit" class="btn btn-primary btn-block mb-3">Sign in</button>
+      </form>
+    </div>
+  </div>
+  <!-- Pills content -->
+
+</div>
+  <!-- end of login promt -->
+
+
+        <div class="social-icons">
+          <a href=""> <i class="fa-brands fa-github"></i></a>
+          <a href=""><i class="fa-brands fa-linkedin"></i></a>
+          <a href=""><i class="fa-brands fa-instagram"></i></a>
+          <a href=""><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- services section -->
+    <section class="cards-services" id="services">
+        <h2 class="title"><a href=""><i class="fa-solid fa-star"></i></a>Our Mission <a href=""><i class="fa-solid fa-star"></i></a></h2>
+        <h2></h2>
+        <div class="content" id="mission">
+
+             Helping university student take a step further to achieve their dreams
+
+
+
+        </div>
+
+    </section>
+    <!-- projects section -->
+    <section class="projects" id="projects">
+        <h2 class="title">
+            Our Services
+        </h2>
+        <div class="content">
+
+            <div class="project-card">
+                <div class="projects-image">
+                    <img src="images/lumensoft-technologies-pSz3JFTDZMA-unsplash.jpg" alt="cyber">
+                </div>
+                <div class="project-info">
+                    <p class="project-category">All what a university student need in one place</p>
+                    <strong class="project-title"><span>Student Essentials </span><a href="" class="">more details</a></strong>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="projects-image">
+                    <img src="images/ryunosuke-kikuno-FKqxZ58bVjU-unsplash.jpg" alt="cyber">
+                </div>
+                <div class="project-info">
+                    <p class="project-category"> select your course and download the text book</p>
+                    <strong class="project-title"><span>Text book library</span><a href="" class="">more details</a></strong>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="projects-image">
+                    <img src="images/indira-tjokorda-zzzItR1kW7Q-unsplash.jpg" alt="cyber">
+                </div>
+                <div class="project-info">
+                    <p class="project-category">MarketPlace for MMU students</p>
+                    <strong class="project-title"><span>CyberMarket</span><a href="" class="">more details</a></strong>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="projects-image">
+                    <img src="images/patty-brito-Y-3Dt0us7e0-unsplash.jpg" alt="cyber">
+                </div>
+                <div class="project-info">
+                    <p class="project-category"></p>
+                    <strong class="project-title"><span>Health Care</span><a href="" class="">more details</a></strong>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="projects-image">
+                    <img src="images/harmen-jelle-van-mourik-0yfWDwHOB0g-unsplash.jpg" alt="cyber">
+                </div>
+                <div class="project-info">
+                    <p class="project-category">rent an apartment near the campus</p>
+                    <strong class="project-title"><span>Find an apartment</span><a href="" class="">more details</a></strong>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="projects-image">
+                    <img src="images/hunters-race-MYbhN8KaaEc-unsplash.jpg" alt="cyber">
+                </div>
+                <div class="project-info">
+                    <p class="project-category"></p>
+                    <strong class="project-title"><span>Carrer Counselling </span><a href="" class="">more details</a></strong>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- contact section -->
+    <section class="cards contact" id="contact">
+        <h2 class="title">connect with us <i class="fa-brands fa-connectdevelop"></i></h2>
+        <div class="content">
+
+            <div class="card">
+                <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+                <div class="info">
+                    
+                    <h3>email</h3>
+                    <p>ahm1329@gmail.com</p>
+                </div>
+
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <a href=""></a> <i class="fa-solid fa-mobile-screen-button"></i></a>
+                </div>
+                <div class="info">
+                    <h3>phone</h3>
+                    <p> 0128569987</p>
+                </div>
+
+            </div>
+
+
+
+    </section>
+
+    <!-- footer section -->
+    <footer class="footer">
+        <p class="footer-title"> <span>© 2020 CyberLife. ALL RIGHTS RESERVED.</span></p>
+
+        <div class="social-icons footer-icons">
+            <a href=""> <i class="fa-brands fa-github"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-youtube"></i></a>
+
+        </div>
+
+
+    </footer>
+</body>
+
+</html>
